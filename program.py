@@ -38,15 +38,15 @@ if __name__ =='__main__':
             #for i, numara in enumerate(ogrenci_numaralari):
             #    if numara == Ogrenci_numarasi:
             #        index = i
-        try:
-            index == ogrenci_numaralari.index(Ogrenci_numarasi)
+            try:
+                index = ogrenci_numaralari.index(Ogrenci_numarasi)
 
-            ogrenci_numaralari.pop(index)
-            ogrenci_adlari.pop(index)
-            ogrenci_soyadlari.pop(index)
-            print(f'{Ogrenci_numarasi} numarali ogrenci silindi!')
-        except ValueError:
-            print(F'{Ogrenci_numarasi} numarali bir ogrenci yok!')
+                ogrenci_numaralari.pop(index)
+                ogrenci_adlari.pop(index)
+                ogrenci_soyadlari.pop(index)
+                print(f'{Ogrenci_numarasi} numarali ogrenci silindi!')
+            except ValueError:
+                print(F'{Ogrenci_numarasi} numarali bir ogrenci yok!')
             
             #if index == -1:
             #    print(F'{Ogrenci_numarasi} numarali bir ogrenci yok!'),
@@ -80,37 +80,36 @@ if __name__ =='__main__':
    
    
    
+    
+    # baslik = 'Ogrenci Bilgi Sistemi (v1)'
 
-    baslik = 'Ogrenci Bilgi Sistemi (v1)'
+    # print(baslik)
+    # print(len(baslik))
 
-    print(baslik)
-    print(len(baslik))
-
-    print('-' * 100)
-    print(f'| {baslik:^94} |x|')
-    print('-' * 100)
+    # print('-' * 100)
+    # print(f'| {baslik:^94} |x|')
+    # print('-' * 100)
      
-    ogrenci_adlari = []
-    ogrenci_soyadlari = []
-    ogrenci_nuamaralari = []
+    # ogrenci_adlari = []
+    # ogrenci_soyadlari = []
+    # ogrenci_nuamaralari = []
 
-    Ogrenci_sayisi = int(input('Ogrenci sayisini giriniz:'))
+    # Ogrenci_sayisi = int(input('Ogrenci sayisini giriniz:'))
 
-    for sira in range(Ogrenci_sayisi):
-        ogrenci_adlari.append(input(f'{sira+1}.ogrencinin adini giriniz:'))      
-        ogrenci_soyadlari.append(input(f'{sira+1}.ogrencinin soyadini giriniz:')) 
-        ogrenci_nuamaralari.append(input(f'{sira+1}.ogrencinin numaranizi giriniz:')) 
+    # for sira in range(Ogrenci_sayisi):
+    #     ogrenci_adlari.append(input(f'{sira+1}.ogrencinin adini giriniz:'))      
+    #     ogrenci_soyadlari.append(input(f'{sira+1}.ogrencinin soyadini giriniz:')) 
+    #     ogrenci_nuamaralari.append(input(f'{sira+1}.ogrencinin numaranizi giriniz:')) 
     
     
     
-    print('-' * 100)
+    # print('-' * 100)
     
-    print(f'|{' '*9}| {"Isim":<35} | {"Soyisim":<25} | {"Numara":<20} |')
-    print('-' * 100)
-    for sira in range(Ogrenci_sayisi):
-        print(f'| {(sira+1):>7d} | {ogrenci_adlari[sira]:<35} | {ogrenci_soyadlari[sira]:<25} | {ogrenci_nuamaralari[sira]:<20} |')
+    # print(f'|{' '*9}| {"Isim":<35} | {"Soyisim":<25} | {"Numara":<20} |')
+    # print('-' * 100)
+    # for sira in range(Ogrenci_sayisi):
+    #     print(f'| {(sira+1):>7d} | {ogrenci_adlari[sira]:<35} | {ogrenci_soyadlari[sira]:<25} | {ogrenci_nuamaralari[sira]:<20} |')
   
-
    
 
 
