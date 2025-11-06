@@ -1,5 +1,55 @@
 if __name__ =='__main__':
 
+    print('''
+          -----------------------------------
+          Ogrenci bilgi sistemi v.1
+          -----------------------------------
+          | Komut Listesi                   |
+          -----------------------------------
+          | kapat   | Uygulamayi sonlandir  |
+          | ekle    | Ogrenci ekle          |
+          | sil     | Ogrenci siler         |
+          | listele | Ogrencileri listeler  |
+          -----------------------------------
+          ''')
+    ogrenci_adlari = []
+    ogrenci_soyadlari = []
+    ogrenci_nuamaralari = []
+    
+    komut = input("Komut giriniz:").strip().lower()
+    while komut != 'kapat':
+        if komut == 'ekle':
+            print('------------------------------------------------------')
+            Ogrenci_sayisi = int(input('Ogrenci sayisini giriniz:'))
+
+            for sira in range(Ogrenci_sayisi):
+                ogrenci_adlari.append(input(f'{sira+1}.ogrencinin adini giriniz:'))      
+                ogrenci_soyadlari.append(input(f'{sira+1}.ogrencinin soyadini giriniz:')) 
+                ogrenci_nuamaralari.append(input(f'{sira+1}.ogrencinin numaranizi giriniz:')) 
+            print('------------------------------------------------------')
+        elif komut == 'sil':
+            print('------------------------------------------------------')
+            print('Ogrenci silme komutlari!!!!')
+            print('------------------------------------------------------')
+        elif komut == 'listele':
+            print('------------------------------------------------------')
+            print('-' * 100)
+            print(f'|{' '*2}| {"Isim":<12} | {"Soyisim":<8} | {"Numara":<6} |')
+            print('-' * 100)
+            for sira in range(len(Ogrenci_sayisi)):
+                print(f'| {(sira+1):>7d} | {ogrenci_adlari[sira]:<35} | {ogrenci_soyadlari[sira]:<25} | {ogrenci_nuamaralari[sira]:<20})
+                print('------------------------------------------------------')
+        else:
+            print('------------------------------------------------------')
+            print(f'"{komut} seklinde tanimli bir komut bulunmamaktadir.')
+            print('------------------------------------------------------')
+   
+        komut = input('Komut giriniz:').strip().lower()
+        print('Program sonlandirildi.')
+   
+   
+   
+
     baslik = 'Ogrenci Bilgi Sistemi (v1)'
 
     print(baslik)
@@ -30,7 +80,7 @@ if __name__ =='__main__':
         print(f'| {(sira+1):>7d} | {ogrenci_adlari[sira]:<35} | {ogrenci_soyadlari[sira]:<25} | {ogrenci_nuamaralari[sira]:<20} |')
   
 
-
+   
 
 
 
