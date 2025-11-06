@@ -31,7 +31,7 @@ if __name__ =='__main__':
             print('------------------------------------------------------')
         elif komut == 'sil':
             print('------------------------------------------------------')
-            Ogrenci_numarasi = (input('Ogrenci sayisini giriniz:'))
+            Ogrenci_numarasi = (input('Ogrenci numarasini giriniz:'))
             
 
             #index = -1
@@ -60,11 +60,11 @@ if __name__ =='__main__':
             print('------------------------------------------------------')
         elif komut == 'listele':
             print('------------------------------------------------------')
-            Ogrenci_sayisi = int(input('Ogrenci sayisini giriniz:'))
+            
             print('-' * 100)
             print(f'|{' '*2}| {"Isim":<12} | {"Soyisim":<8} | {"Numara":<6} |')
             print('-' * 100)
-            for sira in range(len(Ogrenci_sayisi)):
+            for sira in range(len(ogrenci_adlari)):
                 print(f'| {(sira+1):>2} | {ogrenci_adlari[sira]:<12} | {ogrenci_soyadlari[sira]:<8} | {ogrenci_numaralari[sira]:<4}')
                 
             print('------------------------------------------------------')
